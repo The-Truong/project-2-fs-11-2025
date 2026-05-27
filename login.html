@@ -7,6 +7,29 @@
     <title>Login Page</title>
   </head>
   <body>
-    <h1>Trang đăng nhập</h1>
+    <div class="page-account">
+      <div class="form-account">
+        <div class="inner-title">Đăng nhập</div>
+        <div class="inner-desc">Vui lòng nhập email và mật khẩu để tiếp tục</div>
+        <form class="inner-form">
+          <div class="inner-group">
+            <label for="email">Email *</label>
+            <input class="inner-control" type="email" id="email" name="email" placeholder="Ví dụ: levana@gmail.com">
+          </div>
+          <div class="inner-group">
+            <label for="password">Mật khẩu *</label>
+            <input class="inner-control" type="password" id="password" name="password">
+          </div>
+          <div class="inner-meta">
+            <div class="inner-remember">
+              <input type="checkbox" id="remember" name="remember">
+              <label for="remember">Nhớ mật khẩu</label>
+            </div><a class="inner-forgot" href="#">Quên mật khẩu?</a>
+          </div>
+          <button class="inner-button">Đăng nhập</button>
+        </form>
+        <div class="inner-more"><span>Bạn chưa có tài khoản?</span><a href="#">Tạo tài khoản</a></div>
+      </div>
+    </div>
   </body>
 </html>

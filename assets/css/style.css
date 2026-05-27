@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+:root {
+  --color-primary: #4880FF;
+  --color-text: #202224;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+input, textarea, select, button {
+  outline: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* page account */
+.page-account {
+  background-image: url("../images/Back-ground-account.svg");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+/* end page account */
+
+/* form account */
+.form-account {
+  width: 630px;
+  border-radius: 24px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 90px 57px;
+  border: 0.3px solid #B9B9B9;
+  text-align: center;
+}
+
+.form-account .inner-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text);
+  margin-bottom: 15px;
+}
+
+.form-account .inner-desc {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+  margin-bottom: 40px;
+  opacity: 0.8;
+}
+
+.form-account .inner-group {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.form-account .inner-group label {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+  text-align: left;
+  opacity: 0.8;
+}
+
+.form-account .inner-group .inner-control {
+  padding: 16px;
+  font-weight: 600;
+  font-size: 18px;
+  color: #A6A6A6;
+  background-color: #F1F4F9;
+  border: 1px solid #D8D8D8;
+  border-radius: 8px;
+  outline: none;
+}
+
+.form-account .inner-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.form-account .inner-remember {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 5px 12px;
+}
+
+.form-account .inner-remember input {
+  width: 24px; 
+  height: 24px; 
+}
+
+.form-account .inner-remember label {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.form-account .inner-forgot {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+  opacity: 0.6;
+}
+
+.form-account .inner-forgot:hover {
+  color: var(--color-primary);
+  opacity: 1;
+}
+
+.form-account .inner-button {
+  height: 56px;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+  border: 0;
+  border-radius: 8px;
+  width: 100%;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+.form-account .inner-button:hover {
+  opacity: 1;
+}
+
+.form-account .inner-more {
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--color-text);
+}
+
+.form-account .inner-more span {
+  opacity: 0.65;
+}
+
+.form-account .inner-more a {
+  font-weight: 700;
+  font-size: 18px;
+  color: #5A8CFF;
+  text-decoration: underline;
+  margin-left: 5px;
+}
+/* end form account */
