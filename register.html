@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Login Page</title>
+    <title>Đăng ký</title>
   </head>
   <body>
     <div class="page-account">
       <div class="form-account">
-        <div class="inner-title">Đăng nhập</div>
-        <div class="inner-desc">Vui lòng nhập email và mật khẩu để tiếp tục</div>
+        <div class="inner-title">Đăng ký</div>
+        <div class="inner-desc">Tạo một tài khoản để tiếp tục</div>
         <form class="inner-form">
+          <div class="inner-group">
+            <label for="fullName">Họ tên *</label>
+            <input class="inner-control" type="text" id="fullName" name="fullName" placeholder="Ví dụ: Lê Văn A">
+          </div>
           <div class="inner-group">
             <label for="email">Email *</label>
             <input class="inner-control" type="email" id="email" name="email" placeholder="Ví dụ: levana@gmail.com">
@@ -22,13 +26,13 @@
           </div>
           <div class="inner-meta">
             <div class="inner-check">
-              <input type="checkbox" id="remember" name="remember">
-              <label for="remember">Nhớ mật khẩu</label>
-            </div><a class="inner-forgot" href="#">Quên mật khẩu?</a>
+              <input type="checkbox" id="agree" name="agree">
+              <label for="remember">Tôi chấp nhận các điều khoản và điều kiện</label>
+            </div>
           </div>
-          <button class="inner-button">Đăng nhập</button>
+          <button class="inner-button">Đăng ký</button>
         </form>
-        <div class="inner-more"><span>Bạn chưa có tài khoản?</span><a href="#">Tạo tài khoản</a></div>
+        <div class="inner-more"><span>Bạn đã có tài khoản?</span><a href="#">Đăng nhập</a></div>
       </div>
     </div>
   </body>
