@@ -1,11 +1,65 @@
-doctype html
-html(lang="vi")
-  head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1.0")
-    link(rel="stylesheet" href="assets/css/style.css")
-    title Trang tổng quan
-  body
-    header.header header
-    nav.sider 
-    main.main
+extends ../layouts/default.pug
+
+block title
+  title Doashboard
+
+block main
+  h1.box-title Tổng quan
+  .section-1
+    .inner-item
+      img(src="assets/images/section1-1.svg" alt="item 1") 
+      .inner-content
+        .inner-title Người dùng
+        .inner-number 1.200
+    .inner-item
+      img(src="assets/images/section1-2.svg" alt="item 2") 
+      .inner-content
+        .inner-title Đơn hàng
+        .inner-number 3.600
+    .inner-item
+      img(src="assets/images/section1-3.svg" alt="item 3")
+      .inner-content
+        .inner-title Doanh thu
+        .inner-number 300.000.000đ
+  .section-2
+    .inner-head
+      h2.inner-title Biểu đồ doanh thu
+      input(type="date" name="date" class="inner-date")
+    .inner-chart
+  .section-3
+    .inner-title Đơn hàng mới
+    table.table-1
+      thead
+        tr
+          th Mã 
+          th Thông khách hàng
+          th Danh sách tour
+          th Thanh toán
+          th Trạng thái
+          th Ngày đặt
+      tbody
+        tr
+          td OD000001
+          td 
+            .customer-name Le van a
+            .customer-phone 0123456789
+          td 
+            .tour-name Tour Hà Nội - Hạ Long
+            .tour-quantity x2
+          td 6.000.000đ
+          td 
+            span.status.status-pending Chờ xác nhận
+          td 01/01/2024
+        tr
+          td #123457
+          td 
+            .customer-name Nguyen thi b
+            .customer-phone 0987654321
+          td 
+            .tour-name Tour Sài Gòn - Cần Thơ
+            .tour-quantity x1
+          td 3.000.000đ
+          td 
+            span.status.status-confirmed Đã xác nhận
+          td 02/01/2024
+          

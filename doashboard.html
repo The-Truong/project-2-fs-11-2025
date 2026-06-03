@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Doashboard</title>
+  </head>
+  <body>
+    <header class="header"> <a class="inner-logo" href="#"><span>28</span><span>Admin</span></a>
+      <div class="inner-wrap">
+        <div class="inner-notify"><img src="assets/images/bell.svg" alt="Notification"><span>6</span></div>
+        <div class="inner-account"><img src="assets/images/avatar.png" alt="Avatar">
+          <div class="inner-info">
+            <div class="inner-name">Le van a</div>
+            <div class="inner-role">admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="sider">
+      <ul class="inner-menu">
+        <li><a class="active" href="#"><i class="fa-regular fa-clock"></i><span>Tổng quan</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-table-cells-large"></i><span>Quản lý danh mục</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-table-cells"></i><span>Quản lý tour</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i><span>Quản lý đơn hàng</span></a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i><span>Quản lý người dùng</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-group"></i><span>Thông tin liên hệ</span></a></li>
+      </ul>
+      <hr>
+      <ul class="inner-menu">
+        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Cài đặt chung</span></a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i><span>Thông tin cá nhân</span></a></li>
+        <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i><span>Đăng xuất</span></a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h1 class="box-title">Tổng quan</h1>
+      <div class="section-1">
+        <div class="inner-item"><img src="assets/images/section1-1.svg" alt="item 1">
+          <div class="inner-content">
+            <div class="inner-title">Người dùng</div>
+            <div class="inner-number">1.200</div>
+          </div>
+        </div>
+        <div class="inner-item"><img src="assets/images/section1-2.svg" alt="item 2">
+          <div class="inner-content">
+            <div class="inner-title">Đơn hàng</div>
+            <div class="inner-number">3.600</div>
+          </div>
+        </div>
+        <div class="inner-item"><img src="assets/images/section1-3.svg" alt="item 3">
+          <div class="inner-content">
+            <div class="inner-title">Doanh thu</div>
+            <div class="inner-number">300.000.000đ</div>
+          </div>
+        </div>
+      </div>
+      <div class="section-2">
+        <div class="inner-head">
+          <h2 class="inner-title">Biểu đồ doanh thu</h2>
+          <input class="inner-date" type="date" name="date">
+        </div>
+        <div class="inner-chart"></div>
+      </div>
+      <div class="section-3">
+        <div class="inner-title">Đơn hàng mới</div>
+        <table class="table-1">
+          <thead>
+            <tr>
+              <th>Mã </th>
+              <th>Thông khách hàng</th>
+              <th>Danh sách tour</th>
+              <th>Thanh toán</th>
+              <th>Trạng thái</th>
+              <th>Ngày đặt</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>OD000001</td>
+              <td> 
+                <div class="customer-name">Le van a</div>
+                <div class="customer-phone">0123456789</div>
+              </td>
+              <td> 
+                <div class="tour-name">Tour Hà Nội - Hạ Long</div>
+                <div class="tour-quantity">x2</div>
+              </td>
+              <td>6.000.000đ</td>
+              <td> <span class="status status-pending">Chờ xác nhận</span></td>
+              <td>01/01/2024</td>
+            </tr>
+            <tr>
+              <td>#123457</td>
+              <td> 
+                <div class="customer-name">Nguyen thi b</div>
+                <div class="customer-phone">0987654321</div>
+              </td>
+              <td> 
+                <div class="tour-name">Tour Sài Gòn - Cần Thơ</div>
+                <div class="tour-quantity">x1</div>
+              </td>
+              <td>3.000.000đ</td>
+              <td> <span class="status status-confirmed">Đã xác nhận</span></td>
+              <td>02/01/2024</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>

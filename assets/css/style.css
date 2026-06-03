@@ -18,6 +18,12 @@ input, textarea, select, button {
   outline: none;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -169,4 +175,249 @@ a {
 /* end form account */
 
 /* header */
+.header {
+  background-color: #fff;
+  height: 70px;
+  border-bottom: 1px solid #E0E0E0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  display: flex;
+}
+
+.header .inner-logo {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header .inner-logo span {
+  font-weight: 800;
+  font-size: 24px;
+}
+
+.header .inner-logo span:first-child {
+  color: var(--color-primary);
+}
+
+.header .inner-logo span:last-child {
+  color: var(--color-text);
+}
+
+.header .inner-wrap {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+  gap: 40px;
+}
+
+.header .inner-notify {
+  position: relative;
+}
+
+.header .inner-notify img {
+  width: 24px;
+  height: auto;
+}
+
+.header .inner-notify span {
+  position: absolute;
+  min-width: 16px;
+  height: 16px;
+  font-weight: 700;
+  font-size: 12px;
+  color: #fff;
+  background-color: #F93C65;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  right: -5px;
+  top: -5px;
+  padding: 0 4px;
+}
+
+
+.header .inner-account {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .inner-account img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.header .inner-account .inner-name {
+  font-weight: 700;
+  font-size: 14px;
+  color: #404040;
+  margin-bottom: 3px;
+  text-transform: capitalize;
+}
+
+.header .inner-account .inner-role {
+  font-weight: 600;
+  font-size: 12px;
+  color: #565656;
+  text-transform: capitalize;
+}
 /* end header */
+
+/* sider */
+.sider {
+  width: 240px;
+  border-right: 1px solid #E0E0E0;
+  height: calc(100vh - 70px);
+  position: fixed;
+  top: 70px;
+  left: 0;
+  overflow-y: auto;
+}
+
+.sider .inner-menu {
+  margin: 16px 0;
+}
+
+.sider .inner-menu a {
+  display: flex;
+  padding-left: 16px;
+  padding-right: 16px;
+  border-radius: 6px;
+  gap: 12px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--color-text);
+  position: relative;
+  margin-left: 24px;
+  margin-right: 10px;
+  height: 50px;
+}
+
+.sider .inner-menu a i {
+  font-size: 16px;
+}
+
+.sider .inner-menu .active, .sider .inner-menu a:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.sider .inner-menu a::before {
+  content: "";
+  border-radius: 4px;
+  width: 9px;
+  height: 100%;
+  display: block;
+  position: absolute;
+  left: -28.5px;
+  top: 0px;
+  background-color: transparent;
+}
+
+.sider .inner-menu a.active::before,  .sider .inner-menu a:hover::before {
+  background-color: var(--color-primary);
+}
+
+.sider hr {
+  border-bottom: 0.6px solid #E0E0E0;
+}
+
+.sider .inner-menu .inner-logout {
+  color: #F93C65;
+}
+/* end sider */
+
+/* main */
+.main {
+  background-color: #F5F6FA;
+  min-height: calc(100vh - 70px);
+  width: calc(100% - 240px);
+  position: absolute;
+  top: 70px;
+  left: 240px;
+  padding: 30px;
+}
+/* end main */
+
+/* box title */
+.box-title {
+  font-weight: 700;
+  font-size: 32px;
+  color: var(--color-text);
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+/* end box title */
+
+/* section 1 */
+.section-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.section-1 .inner-item {
+  background-color: #FFFFFF;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 28px 10px;
+}
+
+.section-1 .inner-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.section-1 .inner-item .inner-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-text);
+}
+
+.section-1 .inner-item .inner-number {
+  font-weight: 700;
+  font-size: 28px;
+  color: var(--color-text);
+  letter-spacing: 1px;
+}
+/* end section 1 */
+
+/* section 2 */
+.section-2 {
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 32px;
+  border-radius: 14px;
+}
+
+.section-2 .inner-head {
+  margin-bottom: 32px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-2 .inner-title {
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.section-2 .inner-chart {
+  height: 273px;
+  background-color: #F93C65;
+}
+/* end section 2 */
