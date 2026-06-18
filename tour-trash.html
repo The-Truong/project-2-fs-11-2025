@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Thùng rác tour</title>
+  </head>
+  <body>
+    <header class="header"> <a class="inner-logo" href="#"><span>28</span><span>Admin</span></a>
+      <div class="inner-wrap">
+        <div class="inner-notify"><img src="assets/images/bell.svg" alt="Notification"><span>6</span></div>
+        <div class="inner-account"><img src="assets/images/avatar.png" alt="Avatar">
+          <div class="inner-info">
+            <div class="inner-name">Le van a</div>
+            <div class="inner-role">admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="sider">
+      <ul class="inner-menu">
+        <li><a class="active" href="#"><i class="fa-solid fa-gauge-high"></i><span>Tổng quan</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-table-cells-large"></i><span>Quản lý danh mục</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-table-list"></i><span>Quản lý tour</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i><span>Quản lý đơn hàng</span></a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i><span>Quản lý người dùng</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-group"></i><span>Thông tin liên hệ</span></a></li>
+      </ul>
+      <hr>
+      <ul class="inner-menu">
+        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Cài đặt chung</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-gear"></i><span>Thông tin cá nhân</span></a></li>
+        <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i><span>Đăng xuất</span></a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <h1 class="box-title">Thùng rác tour</h1>
+      <div class="section-5">
+        <div class="inner-wrap">
+          <div class="inner-action">
+            <div class="inner-item">
+              <select name="user">
+                <option value="">-- Hành động --</option>
+                <option value="1">Tạm dừng</option>
+                <option value="2">Hoạt động</option>
+              </select>
+            </div>
+            <button>Áp dụng</button>
+          </div>
+          <div class="inner-search"><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm">
+          </div>
+        </div>
+      </div>
+      <div class="section-6">
+        <div class="table-2">
+          <table>
+            <thead>
+              <tr>
+                <th> 
+                  <input class="inner-checkall" type="checkbox" name="selectAll">
+                </th>
+                <th>Tên tour</th>
+                <th>Ảnh đại diện</th>
+                <th>Giá</th>
+                <th>Còn lại</th>
+                <th>Vị trí</th>
+                <th>Trạng thái</th>
+                <th>Tạo bởi</th>
+                <th>Xóa bởi</th>
+                <th>Hành động</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td> 
+                  <input class="inner-check" type="checkbox" name="selectItem">
+                </td>
+                <td>Tour Hạ Long</td>
+                <td><img class="inner-avatar" src="assets/images/section-4.png" alt="avatar"></td>
+                <td>
+                  <div>NL: 1.900.000đ</div>
+                  <div>TE: 1.600.000đ</div>
+                  <div>EB: 1.000.000đ</div>
+                </td>
+                <td>
+                  <div>NL: 30</div>
+                  <div>TE: 20</div>
+                  <div>EB: 10</div>
+                </td>
+                <td>1</td>
+                <td>
+                  <div class="tag tag-green">Hoạt động</div>
+                </td>
+                <td> 
+                  <div>Lê Văn A</div>
+                  <div class="inner-date">01/01/2024</div>
+                </td>
+                <td>
+                  <div>Lê Văn A</div>
+                  <div class="inner-date">16:30 - 20/10/2024</div>
+                </td>
+                <td>
+                  <div class="inner-action"><a class="inner-edit" href="#"> <i class="fa-regular fa-pen-to-square"></i></a><a class="inner-remove" href="#"><i class="fa-regular fa-trash-can"></i></a></div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="box-pagination">
+        <div class="inner-title">Hiển thị 1 - 9 của 78</div>
+        <select name="pagination">
+          <option value="1">Trang 1</option>
+          <option value="2">Trang 2</option>
+          <option value="3">Trang 3</option>
+        </select>
+      </div>
+    </main>
+  </body>
+</html>

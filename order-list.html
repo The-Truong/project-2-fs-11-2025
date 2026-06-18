@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Doashboard</title>
+    <title>Quản lý đơn hàng</title>
   </head>
   <body>
     <header class="header"> <a class="inner-logo" href="#"><span>28</span><span>Admin</span></a>
@@ -36,57 +36,69 @@
       </ul>
     </nav>
     <main class="main">
-      <div class="box-title">Tổng quan</div>
-      <div class="section-1">
-        <div class="inner-item"><img class="inner-icon" src="assets/images/section1-1.svg" alt="item 1">
-          <div class="inner-content">
-            <div class="inner-title">Người dùng</div>
-            <div class="inner-number">1.200</div>
+      <h1 class="box-title">Quản lý đơn hàng</h1>
+      <div class="section-4">
+        <div class="inner-wrap">
+          <div class="inner-item"><i class="fa-solid fa-filter"></i>Bộ lọc</div>
+          <div class="inner-item">
+            <select name="status">
+              <option value="">Trạng thái</option>
+              <option value="1">Khởi tạo</option>
+              <option value="2">Hoạt động</option>
+              <option value="3">Tạm dừng</option>
+            </select>
           </div>
-        </div>
-        <div class="inner-item"><img class="inner-icon" src="assets/images/section1-2.svg" alt="item 2">
-          <div class="inner-content">
-            <div class="inner-title">Đơn hàng</div>
-            <div class="inner-number">3.600</div>
+          <div class="inner-item">
+            <input class="inner-date" type="date" name="dateStart"><span>-</span>
+            <input class="inner-date" type="date" name="dateEnd">
           </div>
+          <div class="inner-item">
+            <select name="paymethod">
+              <option value="">Phương thức thanh toán</option>
+              <option value="1">Thanh toán khi nhận hàng</option>
+              <option value="2">Thanh toán online</option>
+            </select>
+          </div>
+          <div class="inner-item">
+            <select name="paystatus">
+              <option value="">Trạng thái thanh toán</option>
+              <option value="1">Chưa thanh toán</option>
+              <option value="2">Đã thanh toán</option>
+            </select>
+          </div>
+          <div class="inner-item inner-reset"><i class="fa-solid fa-arrow-rotate-right"></i>Xóa bộ lọc</div>
         </div>
-        <div class="inner-item"><img class="inner-icon" src="assets/images/section1-3.svg" alt="item 3">
-          <div class="inner-content">
-            <div class="inner-title">Doanh thu</div>
-            <div class="inner-number">300.000.000đ</div>
+      </div>
+      <div class="section-5">
+        <div class="inner-wrap">
+          <div class="inner-search"><i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Tìm kiếm">
           </div>
         </div>
       </div>
-      <div class="section-2">
-        <div class="inner-head">
-          <div class="inner-title">Biểu đồ doanh thu</div>
-          <input class="inner-input" type="month" name="date">
-        </div>
-        <div class="inner-chart"></div>
-      </div>
-      <div class="section-3">
-        <div class="inner-title">Đơn hàng mới</div>
-        <div class="table-1">
+      <div class="section-6">
+        <div class="table-2">
           <table>
             <thead>
               <tr>
-                <th>Mã </th>
-                <th>Thông khách hàng</th>
+                <th>Mã</th>
+                <th>Thông tin khách</th>
                 <th>Danh sách tour</th>
                 <th>Thanh toán</th>
                 <th>Trạng thái</th>
                 <th>Ngày đặt</th>
+                <th>Hành động</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td> <a class="text-hl" href="#">OD000001</a></td>
-                <td> 
+                <td>
                   <div>Họ tên: Lê Văn A</div>
                   <div>SĐT: 0123456789</div>
                   <div>Ghi chú: Test...</div>
                 </td>
-                <td> 
+                <td>
                   <div class="product-list">
                     <div class="inner-item"><img class="inner-avatar" src="assets/images/section-4.png" alt="tour 1">
                       <div class="inner-content">
@@ -118,14 +130,27 @@
                   <div>PTTT: Ví Momo</div>
                   <div>TTTT: Đã thanh toán</div>
                 </td>
-                <td> 
-                  <div class="tag tag-green">Khởi tạo</div>
+                <td>
+                  <div class="tag tag-green">Hoạt động</div>
                 </td>
-                <td>16:20 01/01/2024</td>
+                <td>
+                  <div class="inner-date">16:30 - 20/10/2024</div>
+                </td>
+                <td>
+                  <div class="inner-action"><a class="inner-edit" href="#"> <i class="fa-regular fa-pen-to-square"></i></a><a class="inner-remove" href="#"><i class="fa-regular fa-trash-can"></i></a></div>
+                </td>
               </tr>
             </tbody>
           </table>
         </div>
+      </div>
+      <div class="box-pagination">
+        <div class="inner-title">Hiển thị 1 - 9 của 78</div>
+        <select name="pagination">
+          <option value="1">Trang 1</option>
+          <option value="2">Trang 2</option>
+          <option value="3">Trang 3</option>
+        </select>
       </div>
     </main>
   </body>
