@@ -753,13 +753,20 @@ a {
   opacity: 0.9;
 }
 
+
 .section-5 .inner-trash {
-  background-color: #F4D4D4;
+  background: #EF382633;
   color: #EF3826;
   font-weight: 700;
   font-size: 14px;
-  padding: 28px 50px;
+  padding: 28px 30px;
   border-radius: 14px;
+  opacity: 0.9;
+}
+
+.section-5 .inner-create:hover,
+.section-5 .inner-trash:hover {
+  opacity: 1;
 }
 
 @media (max-width: 1199.98px){
@@ -773,6 +780,10 @@ a {
     padding: 15px;
   }
   .section-5 .inner-create {
+    padding: 15px;
+  }
+
+  .section-5 .inner-trash {
     padding: 15px;
   }
 
@@ -895,3 +906,271 @@ a {
   font-size: 14px;
 }
 /* end box pagination */
+
+/* section 7 */
+.section-7 {
+  padding: 50px;
+  background-color: white;
+  border: 0.3px solid #B9B9B9;
+  border-radius: 14px;
+}
+
+.section-7 form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+
+
+.section-7 form .inner-group .inner-label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  display: block;
+  margin-bottom: 11px;
+}
+
+.section-7 form .inner-group input, 
+.section-7 form .inner-group select,
+.section-7 form .inner-group textarea {
+  width: 100%;
+  height: 52px;
+  border: 0.6px solid #D5D5D5;
+  background-color: #F5F6FA;
+  border-radius: 4px;
+  padding: 0 22px;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.section-7 form .inner-group textarea {
+  height: 160px;
+  padding: 18px 22px;
+}
+
+.section-7 form .inner-two-col {
+  grid-column: span 2;
+}
+
+.section-7 form .inner-upload-image {
+  position: relative;
+  display: inline-block;
+}
+
+.section-7 form .inner-upload-image input{
+  display: none;
+}
+
+.section-7 form .inner-upload-image .inner-upload {
+  width: 150px;
+  height: 150px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F6FA;
+  border: 0.6px solid #D5D5D5;
+  font-weight: 500;
+  font-size: 50px;
+  color: var(--color-text);
+  cursor: pointer;
+}
+
+.section-7 form .inner-upload-image .inner-remove {
+  width: 22px;
+  height: 22px;
+  background-color: #F93C65;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  position: absolute;
+  right: -11px;
+  top: -11px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.section-7 form .inner-button {
+  text-align: center;
+}
+
+.section-7 form .inner-button button {
+  background-color: var(--color-primary);
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  opacity: 0.9;
+  border: 0;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 275px;
+  height: 56px;
+}
+
+.section-7 form .inner-button button:hover {
+  opacity: 1;
+}
+
+.section-7 .inner-back {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.section-7 .inner-back a {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
+.section-7 form .inner-input-list {
+  display: grid;
+  gap: 9px;
+}
+
+.section-7 form .inner-input-list .inner-input-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.section-7 form .inner-input-list label {
+  font-weight: 600;
+  font-size: 14px;
+  color: #606060;
+  width: 89px;
+}
+
+.section-7 form .inner-input-list input {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+  flex: 1;
+}
+
+.section-7 form .inner-checkbox-list {
+  display: grid;
+  gap: 8px;
+  height: 166px;
+  background-color: #F5F6FA;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 4px;
+  padding: 14px 23px;
+  overflow-y: auto;
+}
+
+.section-7 form .inner-checkbox-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.section-7 form .inner-checkbox-item input {
+  width: 20px;
+  height: 20px;
+  border-radius: 6px;
+}
+
+.section-7 form .inner-checkbox-item label {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.section-7 form .inner-schedule-list {
+  display: grid;
+  gap: 15px;
+}
+
+.section-7 form .inner-schedule-item {
+  padding: 20px;
+  border: 0.6px solid #D5D5D5;
+  border-radius: 4px;
+}
+
+.section-7 form .inner-schedule-head {
+  display: flex;
+  gap: 15px;
+}
+
+.section-7 form .inner-schedule-head input {
+  width: auto;
+  flex: 1;
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--color-text);
+}
+
+.section-7 form .inner-schedule-button {
+  width: 52px;
+  height: 52px;
+  border: 0.6px solid #D5D5D5;
+  background-color: #F5F6FA;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #A6A6A6;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.section-7 form .inner-schedule-button.inner-remove {
+  color: #EF3826;
+}
+
+.section-7 form .inner-schedule-body {
+  margin-top: 15px;
+}
+
+.section-7 form .inner-schedule-body textarea {
+  padding: 16px 22px;
+  height: 300px;
+}
+
+.section-7 form .inner-schedule-create {
+  display: inline-block;
+  background-color: #D5D5D5;
+  opacity: 0.9;
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--color-text);
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.section-7 form .inner-schedule-create:hover {
+  opacity: 1;
+}
+
+@media (max-width: 757.98px){
+  .section-7 {
+    padding: 20px;
+  }
+  
+  .section-7 form {
+    grid-template-columns: 1fr;
+  }
+
+  .section-7 form .inner-two-col {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 575.98px){
+  .section-7 form .inner-schedule-head {
+    flex-wrap: wrap;
+  }
+
+  .section-7 form .inner-schedule-head input {
+    order: 1;
+  }
+}
+/* end section 7 */

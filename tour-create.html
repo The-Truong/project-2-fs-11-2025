@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Tạo tour</title>
+  </head>
+  <body>
+    <header class="header"> <a class="inner-logo" href="#"><span>28</span><span>Admin</span></a>
+      <div class="inner-wrap">
+        <div class="inner-notify"><img src="assets/images/bell.svg" alt="Notification"><span>6</span></div>
+        <div class="inner-account"><img src="assets/images/avatar.png" alt="Avatar">
+          <div class="inner-info">
+            <div class="inner-name">Le van a</div>
+            <div class="inner-role">admin</div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <nav class="sider">
+      <ul class="inner-menu">
+        <li><a class="active" href="#"><i class="fa-solid fa-gauge-high"></i><span>Tổng quan</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-table-cells-large"></i><span>Quản lý danh mục</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-table-list"></i><span>Quản lý tour</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-list-check"></i><span>Quản lý đơn hàng</span></a></li>
+        <li><a href="#"><i class="fa-regular fa-user"></i><span>Quản lý người dùng</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-group"></i><span>Thông tin liên hệ</span></a></li>
+      </ul>
+      <hr>
+      <ul class="inner-menu">
+        <li><a href="#"><i class="fa-solid fa-gear"></i><span>Cài đặt chung</span></a></li>
+        <li><a href="#"><i class="fa-solid fa-user-gear"></i><span>Thông tin cá nhân</span></a></li>
+        <li><a class="inner-logout" href="#"><i class="fa-solid fa-power-off"></i><span>Đăng xuất</span></a></li>
+      </ul>
+    </nav>
+    <main class="main">
+      <div class="box-title">Tạo tour</div>
+      <div class="section-7">
+        <form id="categoryCreateForm">
+          <div class="inner-group">
+            <label class="inner-label" for="name">Tên tour</label>
+            <input type="text" id="name" name="name">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="parent">Danh mục</label>
+            <select id="parent" name="parent">
+              <option value="">-- Chọn danh mục --</option>
+              <option value="danh-muc-1">Danh mục 1</option>
+              <option value="danh-muc-2">Danh mục 2</option>
+            </select>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="position">Vị trí</label>
+            <input type="number" id="position" name="position">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="status">Trạng thái</label>
+            <select id="status" name="status">
+              <option value="active">Hoạt động</option>
+              <option value="inactive">Tạm dừng</option>
+            </select>
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label" for="avatar">Ảnh đại diện</label>
+            <div class="inner-upload-image">
+              <input type="file" id="avatar" name="avatar" accept="image/*">
+              <label class="inner-upload" for="avatar">+</label><span class="inner-remove">x</span>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="position">Giá cũ</label>
+            <div class="inner-input-list">
+              <div class="inner-input-item">
+                <label for="oldPrice1">Người lớn</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+              <div class="inner-input-item">
+                <label for="oldPrice1">Trẻ em</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+              <div class="inner-input-item">
+                <label for="oldPrice1">Em bé</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="position">Giá mới</label>
+            <div class="inner-input-list">
+              <div class="inner-input-item">
+                <label for="oldPrice1">Người lớn</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+              <div class="inner-input-item">
+                <label for="oldPrice1">Trẻ em</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+              <div class="inner-input-item">
+                <label for="oldPrice1">Em bé</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label" for="position">Còn lại</label>
+            <div class="inner-input-list">
+              <div class="inner-input-item">
+                <label for="oldPrice1">Người lớn</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+              <div class="inner-input-item">
+                <label for="oldPrice1">Trẻ em</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+              <div class="inner-input-item">
+                <label for="oldPrice1">Em bé</label>
+                <input type="number" id="oldPrice1" name="oldPrice1">
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label">Những địa điểm có tour</label>
+            <div class="inner-checkbox-list">
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Hà Nội</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Đà Nẵng</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Nha Trang</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Hồ Chí Minh</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Cà Mau</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Phú Quốc</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Hạ Long</label>
+              </div>
+              <div class="inner-checkbox-item">
+                <input type="checkbox">
+                <label>Đà Lạt</label>
+              </div>
+            </div>
+          </div>
+          <div class="inner-group">
+            <label class="inner-label">Thời gian</label>
+            <input type="text">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label">Phương tiện</label>
+            <input type="text">
+          </div>
+          <div class="inner-group">
+            <label class="inner-label">Ngày khởi hành</label>
+            <input type="date">
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label" for="description">Thông tin tour</label>
+            <textarea id="description" name="description"></textarea>
+          </div>
+          <div class="inner-group inner-two-col">
+            <label class="inner-label">Lịch trình tour</label>
+            <div class="inner-schedule">
+              <div class="inner-schedule-list">
+                <div class="inner-schedule-item">
+                  <div class="inner-schedule-head"><span class="inner-schedule-button inner-move"><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                    <input type="text"><span class="inner-schedule-button inner-remove"><i class="fa-regular fa-trash-can"></i></span><span class="inner-schedule-button inner-more"><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                  <div class="inner-schedule-body">
+                    <textarea></textarea>
+                  </div>
+                </div>
+                <div class="inner-schedule-item">
+                  <div class="inner-schedule-head"><span class="inner-schedule-button inner-move"><i class="fa-solid fa-arrows-up-down-left-right"></i></span>
+                    <input type="text"><span class="inner-schedule-button inner-remove"><i class="fa-regular fa-trash-can"></i></span><span class="inner-schedule-button inner-more"><i class="fa-solid fa-chevron-down"></i></span>
+                  </div>
+                  <div class="inner-schedule-body">
+                    <textarea></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="inner-schedule-create">+ Thêm lịch trình</div>
+            </div>
+          </div>
+          <div class="inner-button inner-two-col">
+            <button>Tạo mới</button>
+          </div>
+        </form>
+        <div class="inner-back"><a href="#">Quay lại danh sách</a></div>
+      </div>
+    </main>
+  </body>
+</html>

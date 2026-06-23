@@ -1,0 +1,138 @@
+extends ../layouts/default.pug
+
+block title
+  title Tạo tour
+
+block main
+  .box-title Tạo tour
+  .section-7
+    form(id="categoryCreateForm")
+      .inner-group
+        label.inner-label(for="name") Tên tour
+        input(type="text" id="name" name="name")
+      .inner-group
+        label.inner-label(for="parent") Danh mục
+        select(id="parent" name="parent")
+          option(value="") -- Chọn danh mục --
+          option(value="danh-muc-1") Danh mục 1
+          option(value="danh-muc-2") Danh mục 2
+      .inner-group
+        label.inner-label(for="position") Vị trí
+        input(type="number" id="position" name="position")
+      .inner-group
+        label.inner-label(for="status") Trạng thái
+        select(id="status" name="status")
+          option(value="active") Hoạt động
+          option(value="inactive") Tạm dừng
+      .inner-group.inner-two-col
+        label.inner-label(for="avatar") Ảnh đại diện
+        div.inner-upload-image
+          input(type="file" id="avatar" name="avatar" accept="image/*")
+          label.inner-upload(for="avatar") +
+          span.inner-remove x
+      .inner-group
+        label.inner-label(for="position") Giá cũ
+        .inner-input-list
+          .inner-input-item
+            label(for="oldPrice1") Người lớn
+            input(type="number" id="oldPrice1" name="oldPrice1")
+          .inner-input-item
+            label(for="oldPrice1") Trẻ em
+            input(type="number" id="oldPrice1" name="oldPrice1")
+          .inner-input-item
+            label(for="oldPrice1") Em bé
+            input(type="number" id="oldPrice1" name="oldPrice1")
+      .inner-group
+        label.inner-label(for="position") Giá mới
+        .inner-input-list
+          .inner-input-item
+            label(for="oldPrice1") Người lớn
+            input(type="number" id="oldPrice1" name="oldPrice1")
+          .inner-input-item
+            label(for="oldPrice1") Trẻ em
+            input(type="number" id="oldPrice1" name="oldPrice1")
+          .inner-input-item
+            label(for="oldPrice1") Em bé
+            input(type="number" id="oldPrice1" name="oldPrice1")
+      .inner-group
+        label.inner-label(for="position") Còn lại
+        .inner-input-list
+          .inner-input-item
+            label(for="oldPrice1") Người lớn
+            input(type="number" id="oldPrice1" name="oldPrice1")
+          .inner-input-item
+            label(for="oldPrice1") Trẻ em
+            input(type="number" id="oldPrice1" name="oldPrice1")
+          .inner-input-item
+            label(for="oldPrice1") Em bé
+            input(type="number" id="oldPrice1" name="oldPrice1")
+      .inner-group
+        label.inner-label Những địa điểm có tour
+        .inner-checkbox-list
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Hà Nội
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Đà Nẵng
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Nha Trang
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Hồ Chí Minh
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Cà Mau
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Phú Quốc
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Hạ Long
+          .inner-checkbox-item
+            input(type="checkbox")
+            label Đà Lạt
+      .inner-group
+        label.inner-label Thời gian
+        input(type="text")
+      .inner-group
+        label.inner-label Phương tiện
+        input(type="text")
+      .inner-group
+        label.inner-label Ngày khởi hành
+        input(type="date")
+      .inner-group.inner-two-col
+        label.inner-label(for="description") Thông tin tour
+        textarea(id="description" name="description")
+      .inner-group.inner-two-col
+        label.inner-label Lịch trình tour
+        .inner-schedule
+          .inner-schedule-list
+            .inner-schedule-item
+              .inner-schedule-head
+                span.inner-schedule-button.inner-move
+                  <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                input(type="text")
+                span.inner-schedule-button.inner-remove
+                  <i class="fa-regular fa-trash-can"></i>
+                span.inner-schedule-button.inner-more
+                  <i class="fa-solid fa-chevron-down"></i>
+              .inner-schedule-body
+                textarea
+            .inner-schedule-item
+              .inner-schedule-head
+                span.inner-schedule-button.inner-move
+                  <i class="fa-solid fa-arrows-up-down-left-right"></i>
+                input(type="text")
+                span.inner-schedule-button.inner-remove
+                  <i class="fa-regular fa-trash-can"></i>
+                span.inner-schedule-button.inner-more
+                  <i class="fa-solid fa-chevron-down"></i>
+              .inner-schedule-body
+                textarea
+          .inner-schedule-create + Thêm lịch trình
+      .inner-button.inner-two-col
+        button Tạo mới
+    .inner-back
+      a(href="#") Quay lại danh sách
